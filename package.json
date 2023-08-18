@@ -32,6 +32,7 @@
         "@fleetbase/fleetops-engine": "^0.2.1",
         "@fleetbase/fleetops-data": "^0.0.6",
         "@fleetbase/storefront-engine": "^0.1.6",
+        "@fleetbase/billing-engine": "^0.0.4",
         "@fleetbase/leaflet-routing-machine": "^3.2.16",
         "@fortawesome/ember-fontawesome": "^0.4.1",
         "ember-intl": "^6.0.0-beta.6",
