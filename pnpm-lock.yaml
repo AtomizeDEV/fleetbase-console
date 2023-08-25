@@ -4,9 +4,6 @@ dependencies:
   '@ember/legacy-built-in-components':
     specifier: ^0.4.1
     version: 0.4.1(ember-source@4.6.0)
-  '@fleetbase/billing-engine':
-    specifier: ^0.0.4
-    version: 0.0.4(@babel/core@7.22.10)(@ember/test-helpers@2.8.1)(ember-engines@0.8.23)(ember-fetch@8.1.1)(ember-source@4.6.0)(postcss@8.4.21)(rollup@3.28.0)(webpack@5.74.0)
   '@fleetbase/dev-engine':
     specifier: ^0.1.8
     version: 0.1.8(@babel/core@7.22.10)(@ember/test-helpers@2.8.1)(ember-engines@0.8.23)(ember-fetch@8.1.1)(ember-source@4.6.0)(postcss@8.4.21)(rollup@3.28.1)(webpack@5.74.0)
@@ -283,16 +280,6 @@ packages:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /@adopted-ember-addons/ember-stripe-elements@2.0.4:
-    resolution: {integrity: sha512-MmxLIMSmi/6s3gxutVSRo9JZKZbEYZvYF5oql0/hdbzU1zL83nnX00aM/iLNku9zAkRg6EUJpJcQJuhoaQ3o6A==}
-    engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 6.1.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /@ampproject/remapping@2.2.1:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
@@ -2577,12 +2564,12 @@ packages:
     dev: false
 
   /@fleetbase/fleetops-data@0.0.6:
-    resolution: {integrity: sha512-uvUg0Vp+XZl9PoNrB3TrOPDdnP/Utyt80Coz0zr8z9yLDPLvECzKbIdG8U8ZBh16VauouX3kaPv6GtuYErjvQQ==, tarball: https://npm.pkg.github.com/download/@fleetbase/fleetops-data/0.0.6/2e3b53f8eaa51977677ec8b03d0a6a9e247b3ed8}
+    resolution: {integrity: sha512-btyDaM6n5k7FdKvm9Pk2df6eAdehDbJ7RzTj9qFAX1vUmfFqh953/tSjBM6vhIUZcMV82CKC0h74EJfDog+2Lg==}
     engines: {node: 14.* || >= 16}
     dependencies:
       date-fns: 2.30.0
       ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 6.1.0
+      ember-cli-htmlbars: 6.3.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2606,7 +2593,7 @@ packages:
       broccoli-merge-trees: 4.2.0
       ember-cli-babel: 7.26.11
       ember-cli-es6-transform: 1.0.0
-      ember-cli-htmlbars: 6.1.0
+      ember-cli-htmlbars: 6.3.0
       ember-engines: 0.8.23(@ember/legacy-built-in-components@0.4.1)(ember-source@4.6.0)
       ember-intl: 6.0.0-beta.6(webpack@5.74.0)
       ember-leaflet: 5.1.1(@babel/core@7.22.10)(ember-source@4.6.0)(leaflet@1.9.4)
@@ -2652,7 +2639,7 @@ packages:
       '@fortawesome/fontawesome-svg-core': 6.4.0
       '@fortawesome/free-solid-svg-icons': 6.4.0
       ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 6.1.0
+      ember-cli-htmlbars: 6.3.0
       ember-engines: 0.8.23(@ember/legacy-built-in-components@0.4.1)(ember-source@4.6.0)
       ember-intl: 6.0.0-beta.6(webpack@5.74.0)
       ember-radio-button: 3.0.0-beta.1
@@ -2682,7 +2669,7 @@ packages:
     dev: false
 
   /@fleetbase/leaflet-routing-machine@3.2.16:
-    resolution: {integrity: sha512-sd+Cn3TmWQKyx3Wtx+nFfkejV0f/3ugY6Gl71NUBhaEZ5SlwiR/npibHWXXXQWA377TFSXTc3MKjY+MnpO2uAA==, tarball: https://npm.pkg.github.com/download/@fleetbase/leaflet-routing-machine/3.2.16/f5c1d638b5d1ebd0a81544ae49740005eec27a92}
+    resolution: {integrity: sha512-af0mKH3VKIGEfYEGXS9cedhgniwgkNwjC/Gp9ZEzXGTX2/13PyMdd1XOQTamaItPbh5x2uK2/n1BP0vIJ7ObEQ==}
     dependencies:
       '@mapbox/corslite': 0.0.7
       '@mapbox/polyline': 0.2.0
@@ -2703,7 +2690,7 @@ packages:
       '@fortawesome/free-solid-svg-icons': 6.4.0
       ember-cli-babel: 7.26.11
       ember-cli-es6-transform: 1.0.0
-      ember-cli-htmlbars: 6.1.0
+      ember-cli-htmlbars: 6.3.0
       ember-engines: 0.8.23(@ember/legacy-built-in-components@0.4.1)(ember-source@4.6.0)
       ember-intl: 6.0.0-beta.6(webpack@5.74.0)
       ember-tag-input: 3.1.0
@@ -7746,7 +7733,7 @@ packages:
     dependencies:
       '@embroider/util': 1.12.0(ember-source@4.6.0)
       ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 6.1.0
+      ember-cli-htmlbars: 6.3.0
       ember-source: 4.6.0(@babel/core@7.22.10)(webpack@5.74.0)
     transitivePeerDependencies:
       - '@glint/environment-ember-loose'
