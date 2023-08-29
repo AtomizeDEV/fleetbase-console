@@ -50,6 +50,10 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
         fi
 
+    - name: Install Private GitHub Package
+      run: pnpm install --filter @fleetbase/billing-engine
+
+
     - name: Install Dependencies
       run: pnpm install
 
