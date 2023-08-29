@@ -50,14 +50,6 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
         fi
 
-    - name: Prepare Composer Auth Secret
-      run: |
-        if [[ -n "${{ secrets._GITHUB_AUTH_TOKEN }}" ]]; then
-          echo '{"github-oauth": {"github.com": "'${{ secrets._GITHUB_AUTH_TOKEN }}'"}}' > composer-auth.json
-        else
-          echo '{}' > composer-auth.json
-        fi
-
     - name: Install Dependencies
       run: pnpm install
 
