@@ -20,7 +20,6 @@
 /npm-debug.log*
 /testem.log
 /yarn-error.log
-/.npmrc
 /pnpm-lock.yaml
 
 # ember-try
