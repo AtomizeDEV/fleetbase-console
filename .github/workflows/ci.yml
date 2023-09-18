@@ -17,7 +17,8 @@ jobs:
         node-version: [16.x]  # Build on Node.js 16
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
 
     - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
