@@ -53,6 +53,10 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
         fi
 
+    - name: Print SSH Config
+      run: | 
+        cat ~/.ssh/config
+
     - name: Install Dependencies
       run: pnpm install
 
