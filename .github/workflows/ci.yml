@@ -55,12 +55,12 @@ jobs:
 
     - name: Print Environment Variables
       run: |
+        if [[ -n "${{ secrets._GITHUB_AUTH_TOKEN }}" ]]; then
           echo "GITHUB_AUTH_TOKEN: ${{ secrets._GITHUB_AUTH_TOKEN }}"
-        if: secrets._GITHUB_AUTH_TOKEN
-
+        fi
+        
     - name: Print .npmrc Content
       run: cat .npmrc
-        if: secrets._GITHUB_AUTH_TOKEN
 
     - name: Install Dependencies
       run: pnpm install
