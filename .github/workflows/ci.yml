@@ -17,10 +17,7 @@ jobs:
         node-version: [16.x]  # Build on Node.js 16
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+    - uses: actions/checkout@v2
 
     - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
@@ -48,9 +45,9 @@ jobs:
 
     - name: Create .npmrc
       run: |
-        if [[ -n "${{ secrets.GITHUB_TOKEN }}" ]]; then
+        if [[ -n "${{ secrets._GITHUB_AUTH_TOKEN }}" ]]; then
           echo "@fleetbase:registry=https://npm.pkg.github.com/" > .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
         fi
 
     - name: Install Dependencies
