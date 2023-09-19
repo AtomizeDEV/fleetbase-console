@@ -53,12 +53,6 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
         fi
 
-    - name: Print Environment Variables
-      run: |
-        if [[ -n "${{ secrets._GITHUB_AUTH_TOKEN }}" ]]; then
-          echo "GITHUB_AUTH_TOKEN: ${{ secrets._GITHUB_AUTH_TOKEN }}"
-        fi
-        
     - name: Print .npmrc Content
       run: cat .npmrc
 
