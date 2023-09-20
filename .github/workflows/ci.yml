@@ -50,9 +50,6 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
         fi
 
-    - name: Clear Cache
-      run: pnpm cache clear --force  # Add this step to clear the cache
-
     - name: Install Dependencies
       run: pnpm install
 
