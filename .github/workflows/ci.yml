@@ -19,9 +19,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-      - run:
-          name: Use secure GitHub URLs
-          command: git config --global url."git@github.com:".insteadOf git://github.com/
+    - name: Run secure
+      run: | 
+        git config --global url."git@github.com:".insteadOf git://github.com/
 
     - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
