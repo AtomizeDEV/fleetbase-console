@@ -123,7 +123,7 @@ export default class OnboardIndexController extends Controller {
 
                     if (response.skipVerification === true) {
                         return this.transitionToRoute('console').then(() => {
-                            this.notifications.success('Welcome to Fleetbase!');
+                            this.notifications.success('Welcome to Fastlane!');
                         });
                     }
 
