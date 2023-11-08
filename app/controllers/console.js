@@ -6,7 +6,7 @@ import { later } from '@ember/runloop';
 import { action, computed } from '@ember/object';
 import { alias } from '@ember/object/computed';
 import { isArray } from '@ember/array';
-import first from '@fleetbase/ember-core/utils/first';
+import first from '@atomizedev/ember-core/utils/first';
 
 export default class ConsoleController extends Controller {
     /**
